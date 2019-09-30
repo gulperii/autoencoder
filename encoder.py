@@ -26,6 +26,7 @@ class Encoder(object):
 
         sess = tf.Session()
         init = tf.global_variables_initializer()
+        init = tf.
         sess.run(init)
 
         hasMoreBatch = True

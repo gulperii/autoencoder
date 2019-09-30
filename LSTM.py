@@ -31,6 +31,7 @@ class Cell(object):
         wForget = tf.random_normal(shape=(hp.HIDDEN_SIZE, hp.HIDDEN_SIZE + hp.EMBEDDING_SIZE))
         return wInput, wOutput, wCell, wForget
 
+#TODO: parametrize et !
     def calculateStates(self):
         for vector in self.input:
             Z = tf.concat([vector, self.prevHiddenState], axis=0)
